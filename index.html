@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet CSS</title>
+    <link href='resources/styles.css' rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CSS : Selectors</h1>
+        <p> In this project, I’ll be building my own reference cheat sheet to help me build more websites in the future! </p>
+    </header>
+    <main>
+        <div class="item">
+            <h2>Class and ID</h2>
+            <p>
+                We could select element by Class or ID, for instance:
+            </p>
+            <div class="example">
+                <div class="html-element">
+                    <p>
+                        &lt;!-- element with Class atribute --&gt; <br>
+                        <br>
+                        &lt;p class='paragraph' &gt; <br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                        &lt;/p&gt;
+                    </p>
+                    <p>
+                        &lt;!-- element with ID atribute --&gt; <br>
+                        <br>
+                        &lt;p id='example' &gt; <br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                        &lt;/p&gt;
+                    </p>
+                </div>
+                <div class="css-selector">
+                    <p>
+                        /* Class selector */ <br>
+                        <br>
+                        .paragraph { <br>
+                            color: blue; <br>
+                            font-size: 11px; <br>
+                        }
+                    </p>
+                    <p>
+                        /* ID selector */ <br>
+                        <br>
+                        #example { <br>
+                            color: green; <br>
+                            font-size: 11px; <br>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>CSS Type selector</h2>
+            <p>
+                We can also select by HTML element type:
+            </p>
+            <div class="example">
+                <div class="html-element">
+                    <p>
+                        &lt;!-- H1 element --&gt; <br>
+                        <br>
+                        &lt;H1&gt; Welcome to my blog &lt;/H1&gt;
+                    </p>
+                </div>
+                <div class="css-selector">
+                    <p>
+                        /* Selecting elements of type H1*/ <br>
+                        <br>
+                        h1 { <br>
+                            text-align: center; <br>
+                            font-weigth: bold;<br>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Multipe elements selector</h2>
+            <p>
+                We can select multiple elements by groups:
+            </p>
+            <div class="example">
+                <div class="html-element">
+                    <p>
+                        &lt;!-- H1 element --&gt; <br>
+                        <br>
+                        &lt;H1&gt; Welcome to my blog &lt;/H1&gt;
+                    </p>
+                    <p>
+                        &lt;!-- element with Class atribute --&gt; <br>
+                        <br>
+                        &lt;p class='paragraph' &gt; <br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                        &lt;/p&gt;
+                    </p>
+                    <p>
+                        &lt;!-- element with ID atribute --&gt; <br>
+                        <br>
+                        &lt;p id='example' &gt; <br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                        &lt;/p&gt;
+                    </p>
+                </div>
+                <div class="css-selector">
+                    <p>
+                        /* Selecting multiple element with a common rule */ <br>
+                        <br>
+                        h1, .paragraph, #example { <br>
+                            font-family: Verdana; <br>
+                            background-color: skyblue;<br>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Developed by Jean Pier :)</p>
+        <section class="social-media">
+            <div id='linkedin'>
+                <a href="https://www.linkedin.com/in/jeanpierchavezd/" target="_blank">LinkedIn</a>
+            </div>
+            <div id="github">
+                <a href="https://github.com/Diejo612" target="_blank">GitHub</a>
+            </div>
+            <div id="twitter">
+                <a href="https://twitter.com/batman6127" target="_blank">Twitter</a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
